@@ -2,7 +2,7 @@
 
 #nav{
     display: block;
-    background-color: white;
+    background-color:grey;
     display: inline-block;
     width: 98%;
     border: 4px solid #333333;
@@ -17,4 +17,38 @@
 
 .left{
     float: left;
+}
+
+/* body section */
+
+body{ 
+    font-family:sans-serif;
+    background-color: coral;
+
+}
+
+h4{
+    padding: 10px;
+}
+
+a {
+    color: black;
+}
+
+button{
+    border: none;
+    color:black;
+    background-color: grey;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button:hover{
+    transition-duration: 1s;
+    background-color: grey;
+}
+
+#quiz{
+    text-align: center;
 }
