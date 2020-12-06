@@ -1,6 +1,6 @@
 // questions/answers to use
 
-Var questions = [{
+var questions = [{
         title: "Who is the best Agent to play in Valorant if you want to block vision?",
         Choices: ["Omen()", "Jet()", "Viper()", "Sage()"],
         answer: "Omen()"
@@ -28,3 +28,28 @@ Var questions = [{
     }
 
 ]
+//  variables for scores and times
+var score = 0;
+var timeLeft = 0;
+var currentQuestion = 0;
+var timer;
+
+// button for start button 
+function start(){
+    timeleft= 100;
+    $(document).getid("timeLeft").text("timeleft");
+
+    timer = setInterval(function(){
+        timerLeft--;
+        $(document).getid("timeLeft").text("timeLeft");
+        if(timeLeft < 0) {
+            clearInterval(timer);
+            endGame();
+        }
+    }, 1000);
+        next()
+    }
+// game end 
+function endGame() {
+    clearInterval(timer);
+}
